@@ -1,5 +1,7 @@
 package com.vipul.rest.messenger.model;
 
+import java.util.Date;
+
 import javax.xml.bind.annotation.XmlRootElement;	
 
 @XmlRootElement
@@ -8,7 +10,7 @@ public class Message {
 	private long id;
 	private String author;
 	private String message;
-	private String createdOn;
+	private Date createdOn;
 	
 	
 	public Message() {
@@ -16,7 +18,7 @@ public class Message {
 	}
 	
 	public Message(long id, String message, String author) {
-		this.createdOn = createdOn;
+		this.createdOn = new Date();
 		this.id = id;
 		this.author = author;
 		this.message = message;
@@ -39,10 +41,10 @@ public class Message {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	public String getCreatedOn() {
+	public Date getCreatedOn() {
 		return createdOn;
 	}
-	public void setCreatedOn(String createdOn) {
+	public void setCreatedOn(Date createdOn) {
 		this.createdOn = createdOn;
 	}
 	
