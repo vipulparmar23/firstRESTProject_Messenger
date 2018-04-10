@@ -38,26 +38,35 @@
 		</dependencies>
 	</dependencyManagement>
 
-	
+
 	<dependencies>
-	
-	 <dependency>
-        <groupId>javax.xml.bind</groupId>
-        <artifactId>jaxb-api</artifactId>
-        <version>2.0</version>
-    </dependency>
-	
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.glassfish.jersey.containers</groupId>
 			<artifactId>jersey-container-servlet-core</artifactId>
 			<!-- use the following artifactId if you don't need servlet 2.x compatibility -->
 			<!-- artifactId>jersey-container-servlet</artifactId -->
 		</dependency>
-		<!-- uncomment this to get JSON support <dependency> <groupId>org.glassfish.jersey.media</groupId> 
-			<artifactId>jersey-media-moxy</artifactId> </dependency> <dependency> <groupId>javax.xml.bind</groupId> 
-			<artifactId>jaxb-api</artifactId> <version>2.2.5</version> </dependency> 
-			<dependency> <groupId>com.sun.xml.bind</groupId> <artifactId>jaxb-impl</artifactId> 
-			<version>2.2.5</version> </dependency> -->
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-moxy</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.2.5</version>
+		</dependency>
 	</dependencies>
 	<properties>
 		<jersey.version>2.26-b03</jersey.version>
